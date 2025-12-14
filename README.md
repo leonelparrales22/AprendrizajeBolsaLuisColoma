@@ -66,6 +66,23 @@ USE_PAYPHONE_MOCK=true
 - Tailwind CSS
 - ESLint
 
+## Despliegue en Vercel (Plan Gratuito)
+
+Para desplegar en Vercel usando el mock de pagos (ideal para demostraciones):
+
+1. **Sube tu código a GitHub**
+2. **Ve a [vercel.com](https://vercel.com)** e inicia sesión
+3. **Importa tu proyecto** desde GitHub
+4. **Configura la variable de entorno**:
+   - Key: `USE_PAYPHONE_MOCK`
+   - Value: `true`
+   - Environments: Production, Preview, Development
+5. **Click en "Deploy"**
+
+Tu sitio estará disponible en `tu-proyecto.vercel.app` en 2-3 minutos.
+
+📖 **Guía detallada**: Ver `DEPLOY_VERCEL.md` o `QUICK_DEPLOY.md` para instrucciones completas.
+
 ## Notas
 
 - **Sistema de pagos híbrido**: En desarrollo usa automáticamente el mock. En producción se conecta con Payphone si están configuradas las variables de entorno.
