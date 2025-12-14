@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "NEXT_DISABLE_TURBOPACK=1 next dev",
+    "dev": "$env:NEXT_DISABLE_TURBOPACK=1; next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

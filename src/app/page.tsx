@@ -1,26 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { config } from '../data/config'
 
-interface Config {
-  titulo: string;
-  subtitulo: string;
-  temario: { titulo: string, descripcion: string }[];
-  mentor: { nombre: string, bio: string, foto: string };
-  curso: { precio: number, fechaInicio: string };
-  disclaimer: string;
-}
+type Config = typeof config
 
 export default function Home() {
-  const [config, setConfig] = useState<Config | null>(null)
   const [paymentStatus, setPaymentStatus] = useState('')
   const [loading, setLoading] = useState(false)
-
-  useEffect(() => {
-    fetch('/data/config.json')
-      .then(res => res.json())
-      .then(setConfig)
-  }, [])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -45,7 +32,7 @@ export default function Home() {
     }
   }
 
-  if (!config) return <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">Cargando...</div>
+  return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero */}
       <section className="py-20 text-center px-4">
