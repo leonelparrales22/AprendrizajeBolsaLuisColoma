@@ -33,17 +33,30 @@ export default function Home() {
       email: formData.get('email') as string,
       telefono: formData.get('telefono') as string
     }
-    const res = await fetch('/api/checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    })
-    const result = await res.json()
-    setLoading(false)
-    if (result.success) {
-      setPaymentStatus('¡Pago exitoso! ID: ' + result.transactionId)
-    } else {
-      setPaymentStatus('Error en el pago')
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      const result = await res.json()
+      setLoading(false)
+      
+      if (result.success) {
+        // Si hay una URL de pago (Payphone real), redirigir al usuario
+        if (result.paymentUrl) {
+          setPaymentStatus('Redirigiendo a Payphone...')
+          window.location.href = result.paymentUrl
+        } else {
+          // Mock o pago completado directamente
+          setPaymentStatus('¡Pago exitoso! ID: ' + result.transactionId)
+        }
+      } else {
+        setPaymentStatus('Error en el pago: ' + (result.error || 'Error desconocido'))
+      }
+    } catch (error) {
+      setLoading(false)
+      setPaymentStatus('Error de conexión. Por favor, intenta nuevamente.')
     }
   }
 
