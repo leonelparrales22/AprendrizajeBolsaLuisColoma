@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { initiatePayment } from '@/lib/payphoneMock';
+import { initiatePayment } from '../../../lib/payphoneMock';
 
 export async function POST(request: NextRequest) {
   const { nombre, email, telefono } = await request.json();

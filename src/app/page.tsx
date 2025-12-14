@@ -5,9 +5,9 @@ import { useState, useEffect } from 'react'
 interface Config {
   titulo: string;
   subtitulo: string;
-  temario: {titulo: string, descripcion: string}[];
-  mentor: {nombre: string, bio: string, foto: string};
-  curso: {precio: number, fechaInicio: string};
+  temario: { titulo: string, descripcion: string }[];
+  mentor: { nombre: string, bio: string, foto: string };
+  curso: { precio: number, fechaInicio: string };
   disclaimer: string;
 }
 
