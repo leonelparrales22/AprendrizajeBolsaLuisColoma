@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "$env:NEXT_DISABLE_TURBOPACK=1; next dev",
+    "dev": "set NEXT_DISABLE_TURBOPACK=1 && npx next@13.5.6 dev -p 4000",
+    "dev:original": "$env:NEXT_DISABLE_TURBOPACK=1; next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
