@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
-import 'react-phone-number-input/style.css'
+import PhoneInputWrapper, { isValidPhoneNumber } from '../components/PhoneInputWrapper'
 import { config } from '../data/config'
 
 export default function Home() {
@@ -434,16 +433,10 @@ export default function Home() {
                 required
                 className="w-full p-4 bg-white/95 border-2 border-white/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold text-gray-900 placeholder-gray-500 shadow-lg"
               />
-              <div className="w-full phone-input-wrapper">
-                <PhoneInput
-                  international
-                  defaultCountry="EC"
-                  value={phoneValue}
-                  onChange={(value) => setPhoneValue(value || '')}
-                  placeholder="Teléfono (WhatsApp)"
-                  className="phone-input-custom"
-                />
-              </div>
+              <PhoneInputWrapper
+                value={phoneValue}
+                onChange={(value) => setPhoneValue(value || '')}
+              />
 
               <motion.button
                 type="submit"
