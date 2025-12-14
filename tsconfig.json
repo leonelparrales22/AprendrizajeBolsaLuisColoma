@@ -22,7 +22,7 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    "baseUrl": "."
   },
   "include": [
     "next-env.d.ts",
@@ -37,5 +37,4 @@
   "exclude": [
     "node_modules"
   ]
-}</content>
-<parameter name="filePath">c:\Users\edwar\Documents\GitHub\AprendrizajeBolsaLuisColoma\tsconfig.json
+}
