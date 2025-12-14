@@ -8,6 +8,70 @@ body {
   color: #1F2937;
 }
 
+/* Estilos personalizados para react-phone-number-input */
+.phone-input-wrapper {
+  width: 100%;
+}
+
+.phone-input-wrapper .PhoneInput {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  transition: all 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.phone-input-wrapper .PhoneInput:focus-within {
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.phone-input-wrapper .PhoneInputCountry {
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.phone-input-wrapper .PhoneInputCountryIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.phone-input-wrapper .PhoneInputCountrySelect {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #111827;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+.phone-input-wrapper .PhoneInputCountrySelectArrow {
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.phone-input-wrapper .PhoneInputInput {
+  flex: 1;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #111827;
+  font-size: 1rem;
+}
+
+.phone-input-wrapper .PhoneInputInput::placeholder {
+  color: #6B7280;
+}
+
 @layer utilities {
   .animate-fade-in {
     animation: fadeIn 0.8s ease-in-out;

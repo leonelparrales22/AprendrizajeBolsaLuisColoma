@@ -2,12 +2,15 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
+import 'react-phone-number-input/style.css'
 import { config } from '../data/config'
 
 export default function Home() {
   const [paymentStatus, setPaymentStatus] = useState('')
   const [loading, setLoading] = useState(false)
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
+  const [phoneValue, setPhoneValue] = useState<string>('')
 
   const testimonios = [
     { nombre: 'Carlos M.', pais: '🇪🇨 Ecuador', testimonio: 'En 3 meses pasé de cero conocimiento a hacer mi primer 15% en cripto. El soporte de Luis es invaluable.', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', rating: 5 },
@@ -28,10 +31,18 @@ export default function Home() {
     e.preventDefault()
     setLoading(true)
     const formData = new FormData(e.currentTarget)
+    
+    // Validar que el teléfono esté completo y sea válido
+    if (!phoneValue || !isValidPhoneNumber(phoneValue)) {
+      setPaymentStatus('Por favor, ingresa un número de teléfono válido con código de país')
+      setLoading(false)
+      return
+    }
+    
     const data = {
       nombre: formData.get('nombre') as string,
       email: formData.get('email') as string,
-      telefono: formData.get('telefono') as string
+      telefono: phoneValue // Usar el valor del PhoneInput con código de país
     }
     try {
       const res = await fetch('/api/checkout', {
@@ -423,12 +434,16 @@ export default function Home() {
                 required
                 className="w-full p-4 bg-white/95 border-2 border-white/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold text-gray-900 placeholder-gray-500 shadow-lg"
               />
-              <input
-                name="telefono"
-                placeholder="Teléfono (WhatsApp)"
-                required
-                className="w-full p-4 bg-white/95 border-2 border-white/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold text-gray-900 placeholder-gray-500 shadow-lg"
-              />
+              <div className="w-full phone-input-wrapper">
+                <PhoneInput
+                  international
+                  defaultCountry="EC"
+                  value={phoneValue}
+                  onChange={(value) => setPhoneValue(value || '')}
+                  placeholder="Teléfono (WhatsApp)"
+                  className="phone-input-custom"
+                />
+              </div>
 
               <motion.button
                 type="submit"
