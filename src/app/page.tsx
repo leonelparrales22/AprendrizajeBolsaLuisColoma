@@ -391,10 +391,25 @@ export default function Home() {
               <blockquote className="italic text-accent-light border-l-4 border-gold pl-6 text-lg mb-6">
                 "El dinero no es el objetivo. La libertad de elegir tu vida, sí."
               </blockquote>
-              <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+              <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-6">
                 <span className="px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-sm text-accent font-semibold">Wall Street Certified</span>
                 <span className="px-4 py-2 rounded-full bg-gold/10 border border-gold/30 text-sm text-gold font-semibold">+$10M Gestionados</span>
                 <span className="px-4 py-2 rounded-full bg-cyber-emerald/10 border border-cyber-emerald/30 text-sm text-cyber-emerald font-semibold">40+ Países</span>
+              </div>
+
+              {/* Información de Contacto */}
+              <div className="mt-6 p-4 bg-gradient-to-r from-accent/5 to-gold/5 border border-accent/20 rounded-xl">
+                <p className="text-sm text-gray-600 mb-2 font-semibold">📞 Contáctame directamente:</p>
+                <a
+                  href="https://wa.me/593988027275?text=Hola%2C%20estoy%20interesado%20en%20el%20curso%20de%20bolsa%20de%20valores"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-accent hover:text-gold transition-colors flex items-center gap-2"
+                >
+                  <span>+593 98 802 7275</span>
+                  <span className="text-sm text-gray-500">🇪🇨 Ecuador</span>
+                </a>
+                <p className="text-xs text-gray-500 mt-1">Disponible para consultas desde cualquier país</p>
               </div>
             </div>
           </motion.div>
@@ -499,23 +514,35 @@ export default function Home() {
             <a href="#inscripcion" className="text-gray-600 hover:text-accent transition">Inscripción</a>
           </nav>
 
-          <div className="flex gap-4">
+          <div className="text-center md:text-right">
+            <p className="text-sm text-gray-600 mb-2 font-semibold">Contacto Directo</p>
             <a
-              href="https://wa.me/593999999999"
+              href="https://wa.me/593988027275?text=Hola%2C%20estoy%20interesado%20en%20el%20curso%20de%20bolsa%20de%20valores"
               target="_blank"
-              rel="noopener"
-              aria-label="WhatsApp"
-              className="w-10 h-10 rounded-full bg-cyber-emerald/10 border-2 border-cyber-emerald flex items-center justify-center hover:bg-cyber-emerald hover:text-white transition-all duration-300"
+              rel="noopener noreferrer"
+              className="text-lg font-bold text-accent hover:text-gold transition-colors block mb-1"
             >
-              <span className="text-xl">💬</span>
+              +593 98 802 7275
             </a>
-            <a
-              href="mailto:info@luiscoloma.com"
-              aria-label="Email"
-              className="w-10 h-10 rounded-full bg-accent/10 border-2 border-accent flex items-center justify-center hover:bg-accent hover:text-white transition-all duration-300"
-            >
-              <span className="text-xl">✉️</span>
-            </a>
+            <p className="text-xs text-gray-500">🇪🇨 Ecuador - Disponible internacionalmente</p>
+            <div className="flex gap-4 justify-center md:justify-end mt-4">
+              <a
+                href="https://wa.me/593988027275"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="w-10 h-10 rounded-full bg-cyber-emerald/10 border-2 border-cyber-emerald flex items-center justify-center hover:bg-cyber-emerald hover:text-white transition-all duration-300"
+              >
+                <span className="text-xl">💬</span>
+              </a>
+              <a
+                href="mailto:info@luiscoloma.com"
+                aria-label="Email"
+                className="w-10 h-10 rounded-full bg-accent/10 border-2 border-accent flex items-center justify-center hover:bg-accent hover:text-white transition-all duration-300"
+              >
+                <span className="text-xl">✉️</span>
+              </a>
+            </div>
           </div>
         </div>
 
