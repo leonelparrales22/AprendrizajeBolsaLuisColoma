@@ -25,8 +25,7 @@ export const config = {
     foto: "https://via.placeholder.com/150"
   },
   curso: {
-    precio: 99.99,
-    fechaInicio: "2025-01-01"
+    precio: 99.99
   },
   metricas: {
     alumnos: "5,000+",

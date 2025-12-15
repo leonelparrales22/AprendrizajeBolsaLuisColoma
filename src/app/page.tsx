@@ -86,7 +86,7 @@ export default function Home() {
             LUIS COLOMA
           </div>
           <a href="#inscripcion" className="px-6 py-2 rounded-full bg-gradient-to-r from-accent to-accent-light text-white font-semibold hover:shadow-glow-accent transition-all duration-300">
-            Inscríbete Ahora
+            Únete al Curso
           </a>
         </div>
       </motion.nav>
@@ -412,11 +412,11 @@ export default function Home() {
             className="bg-gradient-to-br from-accent to-accent-light border-2 border-accent rounded-3xl p-12 shadow-2xl"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-              🔥 Asegura Tu Cupo Ahora
+              🚀 Comienza Tu Transformación Financiera
             </h2>
             <p className="text-center text-lg text-white/90 mb-8">
               Acceso inmediato al campus + comunidad privada + actualizaciones de por vida.<br />
-              <span className="font-bold text-gold">Solo quedan 23 plazas</span> en esta convocatoria.
+              <span className="font-bold text-gold">Inscripción abierta permanentemente</span> - Únete cuando estés listo.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-5">

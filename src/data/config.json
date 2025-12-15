@@ -25,8 +25,7 @@
     "foto": "https://via.placeholder.com/150"
   },
   "curso": {
-    "precio": 99.99,
-    "fechaInicio": "2025-01-01"
+    "precio": 99.99
   },
   "disclaimer": "Este curso no constituye consejo financiero. Invierte bajo tu propio riesgo."
 }
