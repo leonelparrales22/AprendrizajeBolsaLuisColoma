@@ -1,27 +1,27 @@
 export const config = {
-  titulo: "Domina los Mercados Financieros y Criptomonedas",
-  subtitulo: "La formación elite que transforma principiantes en inversionistas profesionales. Más de 5,000 alumnos ya generan ingresos pasivos con nuestro sistema probado.",
+  titulo: "Domina la Bolsa de Valores y Mercados Financieros",
+  subtitulo: "La formación elite que transforma principiantes en inversionistas profesionales de la bolsa. Más de 5,000 alumnos ya generan ingresos pasivos invirtiendo en acciones, índices y activos tradicionales con nuestro sistema probado.",
   temario: [
     {
-      titulo: "Fundamentos de Alto Impacto",
-      descripcion: "Decodifica el ADN de los mercados. Aprende a leer patrones que el 90% ignora y toma decisiones con precisión quirúrgica."
+      titulo: "Fundamentos de la Bolsa de Valores",
+      descripcion: "Domina los conceptos esenciales: acciones, índices, ETFs, bonos y derivados. Aprende a leer el mercado bursátil y toma decisiones con precisión profesional."
     },
     {
-      titulo: "Análisis Técnico Avanzado",
-      descripcion: "Domina indicadores institucionales, velas japonesas y zonas de liquidez. Las herramientas que usan los grandes fondos de inversión."
+      titulo: "Análisis Técnico Avanzado para Acciones",
+      descripcion: "Domina indicadores institucionales, velas japonesas y zonas de liquidez aplicados a la bolsa. Las herramientas que usan los grandes fondos de inversión en Wall Street."
     },
     {
-      titulo: "Gestión de Riesgo y Psicología",
-      descripcion: "Protege tu capital como lo hacen los profesionales. Estrategias de diversificación, stop-loss dinámico y control emocional absoluto."
+      titulo: "Gestión de Riesgo y Psicología del Inversor",
+      descripcion: "Protege tu capital como lo hacen los profesionales. Estrategias de diversificación de portafolio, stop-loss dinámico y control emocional absoluto en la bolsa."
     },
     {
-      titulo: "Criptomonedas y DeFi",
-      descripcion: "Blockchain, NFTs, staking y yield farming. Accede al futuro del dinero antes que las masas y multiplica tus oportunidades."
+      titulo: "Criptomonedas como Complemento",
+      descripcion: "Explora criptomonedas como alternativa de diversificación. Blockchain, trading de criptoactivos y oportunidades complementarias a tu estrategia principal en bolsa."
     }
   ],
   mentor: {
     nombre: "Luis Coloma",
-    bio: "Inversor profesional con +12 años en Wall Street y mercados cripto. Ha formado a +5,000 estudiantes en 40 países y gestionado +$10M en activos digitales. Creador del método 'Smart Capital Flow' usado por traders institucionales.",
+    bio: "Inversor profesional con +12 años de experiencia en Wall Street y bolsa de valores. Ha formado a +5,000 estudiantes en 40 países y gestionado +$10M en activos bursátiles. Creador del método 'Smart Capital Flow' usado por traders institucionales. Especialista en acciones, índices y derivados financieros.",
     foto: "https://via.placeholder.com/150"
   },
   curso: {

@@ -12,7 +12,7 @@ export default function Home() {
   const [phoneValue, setPhoneValue] = useState<string>('+593988027275')
 
   const testimonios = [
-    { nombre: 'Carlos M.', pais: '🇪🇨 Ecuador', testimonio: 'En 3 meses pasé de cero conocimiento a hacer mi primer 15% en cripto. El soporte de Luis es invaluable.', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', rating: 5 },
+    { nombre: 'Carlos M.', pais: '🇪🇨 Ecuador', testimonio: 'En 3 meses pasé de cero conocimiento a hacer mi primer 15% invirtiendo en la bolsa. El soporte de Luis es invaluable.', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', rating: 5 },
     { nombre: 'María G.', pais: '🇲🇽 México', testimonio: 'Probé 5 cursos antes. Este fue el único que me enseñó a leer el mercado de verdad. Ahora opero con confianza.', avatar: 'https://randomuser.me/api/portraits/women/44.jpg', rating: 5 },
     { nombre: 'Javier R.', pais: '🇨🇴 Colombia', testimonio: 'La comunidad es oro puro. Cada semana hay análisis en vivo y estrategias actualizadas. Inversión recuperada en 1 mes.', avatar: 'https://randomuser.me/api/portraits/men/65.jpg', rating: 5 },
     { nombre: 'Ana L.', pais: '🇦🇷 Argentina', testimonio: 'Finalmente entendí el análisis técnico. Las estrategias son claras y aplicables. Mi portafolio creció un 25% este trimestre.', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', rating: 5 },

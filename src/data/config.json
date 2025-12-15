@@ -1,27 +1,27 @@
 {
-  "titulo": "Curso de Bolsa de Valores y Criptomonedas",
-  "subtitulo": "Aprende a invertir de manera inteligente con Luis Coloma",
+  "titulo": "Curso de Bolsa de Valores y Mercados Financieros",
+  "subtitulo": "Aprende a invertir en la bolsa de manera inteligente con Luis Coloma",
   "temario": [
     {
-      "titulo": "Módulo 1: Introducción a los Mercados Financieros",
-      "descripcion": "Conceptos básicos de bolsa y cripto."
+      "titulo": "Módulo 1: Introducción a la Bolsa de Valores",
+      "descripcion": "Conceptos básicos de acciones, índices, ETFs y mercados bursátiles."
     },
     {
-      "titulo": "Módulo 2: Análisis Técnico",
-      "descripcion": "Herramientas para predecir movimientos."
+      "titulo": "Módulo 2: Análisis Técnico para Acciones",
+      "descripcion": "Herramientas para predecir movimientos en la bolsa."
     },
     {
-      "titulo": "Módulo 3: Estrategias de Inversión",
-      "descripcion": "Cómo diversificar y gestionar riesgos."
+      "titulo": "Módulo 3: Estrategias de Inversión en Bolsa",
+      "descripcion": "Cómo diversificar y gestionar riesgos en portafolios bursátiles."
     },
     {
-      "titulo": "Módulo 4: Criptomonedas Avanzadas",
-      "descripcion": "Blockchain, DeFi y NFTs."
+      "titulo": "Módulo 4: Criptomonedas como Complemento",
+      "descripcion": "Exploración de criptoactivos como alternativa de diversificación."
     }
   ],
   "mentor": {
     "nombre": "Luis Coloma",
-    "bio": "Experto en inversiones con 10 años de experiencia en mercados financieros y criptomonedas.",
+    "bio": "Experto en inversiones con 10 años de experiencia en bolsa de valores y mercados financieros tradicionales.",
     "foto": "https://via.placeholder.com/150"
   },
   "curso": {
