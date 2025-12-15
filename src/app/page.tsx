@@ -9,7 +9,7 @@ export default function Home() {
   const [paymentStatus, setPaymentStatus] = useState('')
   const [loading, setLoading] = useState(false)
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
-  const [phoneValue, setPhoneValue] = useState<string>('+593988027275')
+  const [phoneValue, setPhoneValue] = useState<string>('')
 
   const testimonios = [
     { nombre: 'Carlos M.', pais: '🇪🇨 Ecuador', testimonio: 'En 3 meses pasé de cero conocimiento a hacer mi primer 15% invirtiendo en la bolsa. El soporte de Luis es invaluable.', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', rating: 5 },
