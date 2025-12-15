@@ -9,7 +9,7 @@ export default function Home() {
   const [paymentStatus, setPaymentStatus] = useState('')
   const [loading, setLoading] = useState(false)
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
-  const [phoneValue, setPhoneValue] = useState<string>('')
+  const [phoneValue, setPhoneValue] = useState<string>('+593988027275')
 
   const testimonios = [
     { nombre: 'Carlos M.', pais: '🇪🇨 Ecuador', testimonio: 'En 3 meses pasé de cero conocimiento a hacer mi primer 15% en cripto. El soporte de Luis es invaluable.', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', rating: 5 },
@@ -30,14 +30,14 @@ export default function Home() {
     e.preventDefault()
     setLoading(true)
     const formData = new FormData(e.currentTarget)
-    
+
     // Validar que el teléfono esté completo y sea válido
     if (!phoneValue || !isValidPhoneNumber(phoneValue)) {
       setPaymentStatus('Por favor, ingresa un número de teléfono válido con código de país')
       setLoading(false)
       return
     }
-    
+
     const data = {
       nombre: formData.get('nombre') as string,
       email: formData.get('email') as string,
@@ -51,7 +51,7 @@ export default function Home() {
       })
       const result = await res.json()
       setLoading(false)
-      
+
       if (result.success) {
         // Si hay una URL de pago (Payphone real), redirigir al usuario
         if (result.paymentUrl) {
