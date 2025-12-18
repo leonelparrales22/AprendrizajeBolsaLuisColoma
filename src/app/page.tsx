@@ -393,7 +393,6 @@ export default function Home() {
               </blockquote>
               <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-6">
                 <span className="px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-sm text-accent font-semibold">Wall Street Certified</span>
-                <span className="px-4 py-2 rounded-full bg-gold/10 border border-gold/30 text-sm text-gold font-semibold">+$10M Gestionados</span>
                 <span className="px-4 py-2 rounded-full bg-cyber-emerald/10 border border-cyber-emerald/30 text-sm text-cyber-emerald font-semibold">40+ Países</span>
               </div>
 
@@ -504,7 +503,7 @@ export default function Home() {
             <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2">
                 <span className="text-gold text-xl">✓</span>
-                Garantía 30 días
+                Garantía 1 año
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-gold text-xl">✓</span>

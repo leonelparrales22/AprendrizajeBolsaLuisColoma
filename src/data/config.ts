@@ -21,7 +21,7 @@ export const config = {
   ],
   mentor: {
     nombre: "Luis Coloma",
-    bio: "Inversor profesional con +4 años de experiencia en Wall Street y bolsa de valores. Ha formado a +5,000 estudiantes en 40 países y gestionado +$10M en activos bursátiles. Creador del método 'Smart Capital Flow' usado por traders institucionales. Especialista en acciones, índices y derivados financieros.",
+    bio: "Inversor profesional con +4 años de experiencia en Wall Street y bolsa de valores. Ha formado a +5,000 estudiantes en 40 países. Creador del método 'Smart Capital Flow' usado por traders institucionales. Especialista en acciones, índices y derivados financieros.",
     foto: "https://via.placeholder.com/150"
   },
   curso: {
