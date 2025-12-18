@@ -434,6 +434,7 @@ export default function Home() {
               <span className="font-bold text-gold">Inscripción abierta permanentemente</span> - Únete cuando estés listo.
             </p>
 
+            {/* Formulario oculto - descomentarlo si se necesita en el futuro
             <form onSubmit={handleSubmit} className="space-y-5">
               <input
                 name="nombre"
@@ -473,6 +474,32 @@ export default function Home() {
                 {paymentStatus}
               </motion.p>
             )}
+            */}
+
+            {/* Código QR de Pago */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="flex flex-col items-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-gold/20"
+            >
+              <h3 className="text-xl font-bold text-white mb-4 text-center">
+                💳 Escanea para Pagar
+              </h3>
+              <div className="bg-white p-4 rounded-xl shadow-2xl">
+                <img
+                  src="/images/CodigoQR.jpeg"
+                  alt="Código QR de Pago"
+                  className="w-48 h-48 md:w-64 md:h-64 object-contain"
+                />
+              </div>
+              <p className="text-white/80 text-sm mt-4 text-center">
+                Precio del curso: <span className="text-gold font-bold text-xl">${config.curso.precio}</span>
+              </p>
+              <p className="text-white/60 text-xs mt-2 text-center max-w-xs">
+                Escanea el código QR con tu app de pagos para completar la inscripción
+              </p>
+            </motion.div>
 
             <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2">

@@ -21,11 +21,11 @@
   ],
   "mentor": {
     "nombre": "Luis Coloma",
-    "bio": "Experto en inversiones con 10 años de experiencia en bolsa de valores y mercados financieros tradicionales.",
+    "bio": "Experto en inversiones con 4 años de experiencia en bolsa de valores y mercados financieros tradicionales.",
     "foto": "https://via.placeholder.com/150"
   },
   "curso": {
-    "precio": 99.99
+    "precio": 80
   },
-  "disclaimer": "Este curso no constituye consejo financiero. Invierte bajo tu propio riesgo."
+  "disclaimer": "⚠️ AVISO IMPORTANTE: Este curso es exclusivamente con fines educativos e informativos. No constituye asesoramiento financiero, legal o de inversión. Los resultados pasados no garantizan rendimientos futuros. Toda inversión en bolsa de valores y mercados financieros conlleva riesgos, incluyendo la pérdida total o parcial del capital invertido. El contenido del curso no es una promesa o garantía de ganancias. Cada estudiante es responsable de sus propias decisiones de inversión. Se recomienda consultar con un asesor financiero certificado antes de realizar cualquier inversión. Al inscribirse, usted acepta que participa bajo su propio riesgo y que el instructor no se hace responsable por pérdidas financieras derivadas del uso de la información proporcionada."
 }
