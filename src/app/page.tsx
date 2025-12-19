@@ -365,7 +365,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mentor Section con Imagen */}
+      {/* Mentor Section */}
       <section className="py-24 px-4 bg-gradient-to-br from-primary-light to-white relative">
         <div className="max-w-6xl mx-auto relative z-10">
           <motion.div
@@ -373,15 +373,9 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white border-2 border-accent/20 rounded-3xl shadow-2xl p-12 flex flex-col md:flex-row items-center gap-12"
+            className="bg-white border-2 border-accent/20 rounded-3xl shadow-2xl p-12"
           >
-            <motion.img
-              whileHover={{ scale: 1.05 }}
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=facearea&w=400&h=400&q=80"
-              alt={config.mentor.nombre}
-              className="w-64 h-64 rounded-full border-4 border-gold shadow-2xl object-cover"
-            />
-            <div className="flex-1 text-center md:text-left">
+            <div className="text-center md:text-left">
               <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent">
                 {config.mentor.nombre}
               </h2>
