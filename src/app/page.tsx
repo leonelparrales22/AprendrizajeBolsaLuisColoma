@@ -492,6 +492,14 @@ export default function Home() {
               <p className="text-white/60 text-xs mt-2 text-center max-w-xs">
                 Escanea el código QR con tu app de pagos para completar la inscripción
               </p>
+              <a
+                href={config.curso.payphoneUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 px-6 py-3 bg-gold hover:bg-gold/90 text-primary-dark font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-center"
+              >
+                💻 Pagar desde mi Computadora
+              </a>
             </motion.div>
 
             <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-white/80">

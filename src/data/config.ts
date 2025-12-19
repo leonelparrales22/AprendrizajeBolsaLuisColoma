@@ -25,7 +25,8 @@ export const config = {
     foto: "https://via.placeholder.com/150"
   },
   curso: {
-    precio: 80
+    precio: 80,
+    payphoneUrl: "https://ppls.me/WxWVywiSgNxMPGE279Kg"
   },
   metricas: {
     alumnos: "5,000+",
