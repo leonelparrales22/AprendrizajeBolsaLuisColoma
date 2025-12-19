@@ -21,7 +21,7 @@ export const config = {
   ],
   mentor: {
     nombre: "Luis Coloma",
-    bio: "Inversor profesional con +4 años de experiencia en Wall Street y bolsa de valores. Ha formado a +1,000 estudiantes en 40 países. Creador del método 'Smart Capital Flow' usado por traders institucionales. Especialista en acciones, índices y derivados financieros.",
+    bio: "Inversor profesional con +4 años de experiencia en Wall Street y bolsa de valores. Ha formado a +1,000 estudiantes en 30 países. Creador del método 'Smart Capital Flow' usado por traders institucionales. Especialista en acciones, índices y derivados financieros.",
     foto: "https://via.placeholder.com/150"
   },
   curso: {
@@ -32,7 +32,7 @@ export const config = {
     alumnos: "1,000+",
     experiencia: "4+ años",
     satisfaccion: "98%",
-    paises: "40+"
+    paises: "30+"
   },
   disclaimer: "⚠️ AVISO IMPORTANTE: Este curso es exclusivamente con fines educativos e informativos. No constituye asesoramiento financiero, legal o de inversión. Los resultados pasados no garantizan rendimientos futuros. Toda inversión en bolsa de valores y mercados financieros conlleva riesgos, incluyendo la pérdida total o parcial del capital invertido. El contenido del curso no es una promesa o garantía de ganancias. Cada estudiante es responsable de sus propias decisiones de inversión. Se recomienda consultar con un asesor financiero certificado antes de realizar cualquier inversión. Al inscribirse, usted acepta que participa bajo su propio riesgo y que el instructor no se hace responsable por pérdidas financieras derivadas del uso de la información proporcionada."
 };

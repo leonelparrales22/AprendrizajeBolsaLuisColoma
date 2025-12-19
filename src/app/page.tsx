@@ -392,7 +392,7 @@ export default function Home() {
               </blockquote>
               <div className="flex flex-wrap gap-3 justify-center mb-8">
                 <span className="px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-sm text-accent font-semibold">Wall Street Certified</span>
-                <span className="px-4 py-2 rounded-full bg-cyber-emerald/10 border border-cyber-emerald/30 text-sm text-cyber-emerald font-semibold">40+ Países</span>
+                <span className="px-4 py-2 rounded-full bg-cyber-emerald/10 border border-cyber-emerald/30 text-sm text-cyber-emerald font-semibold">30+ Países</span>
               </div>
 
               {/* Información de Contacto */}
@@ -503,7 +503,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="mt-4 px-6 py-3 bg-gold hover:bg-gold/90 text-primary-dark font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-center"
               >
-                💻 Pagar desde mi Computadora
+                💳 Pagar Ahora con Payphone
               </a>
             </motion.div>
 
