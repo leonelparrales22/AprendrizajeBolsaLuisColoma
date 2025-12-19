@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Fondo degradado -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- Patrón decorativo de fondo -->
+  <circle cx="100" cy="100" r="150" fill="rgba(251, 191, 36, 0.1)"/>
+  <circle cx="1100" cy="530" r="200" fill="rgba(251, 191, 36, 0.1)"/>
+  
+  <!-- Gráfica decorativa -->
+  <path d="M100 450 L200 380 L300 400 L400 320 L500 340 L600 280 L700 300 L800 250" 
+        stroke="#fbbf24" 
+        stroke-width="8" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        opacity="0.3"/>
+  
+  <!-- Contenido principal -->
+  <text x="600" y="180" 
+        font-family="Arial, sans-serif" 
+        font-size="80" 
+        font-weight="bold" 
+        fill="#fbbf24" 
+        text-anchor="middle">
+    📈 LUIS COLOMA
+  </text>
+  
+  <text x="600" y="280" 
+        font-family="Arial, sans-serif" 
+        font-size="52" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="middle">
+    Curso de Bolsa de Valores
+  </text>
+  
+  <text x="600" y="340" 
+        font-family="Arial, sans-serif" 
+        font-size="36" 
+        fill="#e5e7eb" 
+        text-anchor="middle">
+    y Mercados Financieros
+  </text>
+  
+  <!-- Estadísticas -->
+  <g transform="translate(200, 420)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#fbbf24">
+      ✓ 1,000+ Alumnos
+    </text>
+  </g>
+  
+  <g transform="translate(500, 420)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#fbbf24">
+      ✓ 30+ Países
+    </text>
+  </g>
+  
+  <g transform="translate(780, 420)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#fbbf24">
+      ✓ 98% Satisfacción
+    </text>
+  </g>
+  
+  <!-- CTA -->
+  <rect x="450" y="500" width="300" height="70" rx="35" fill="#fbbf24"/>
+  <text x="600" y="545" 
+        font-family="Arial, sans-serif" 
+        font-size="32" 
+        font-weight="bold" 
+        fill="#1e3a8a" 
+        text-anchor="middle">
+    ¡Únete Ahora!
+  </text>
+</svg>
+
