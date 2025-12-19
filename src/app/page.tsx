@@ -257,7 +257,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {config.temario.map((modulo, i) => (
               <motion.div
                 key={i}
@@ -266,8 +266,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(30, 64, 175, 0.15)' }}
-                className={`bg-white border border-gray-200 rounded-3xl p-8 hover:border-accent transition-all duration-500 group shadow-lg ${i === 0 ? 'md:col-span-2 lg:col-span-2' : ''
-                  } ${i === 3 ? 'md:col-span-2 lg:col-span-2' : ''}`}
+                className="bg-white border border-gray-200 rounded-3xl p-8 hover:border-accent transition-all duration-500 group shadow-lg"
               >
                 {/* Mini imagen */}
                 <div className="relative w-full h-40 rounded-2xl overflow-hidden mb-6">
