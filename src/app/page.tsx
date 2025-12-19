@@ -82,8 +82,11 @@ export default function Home() {
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/80 border-b border-gray-200 shadow-sm"
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent">
-            LUIS COLOMA
+          <div className="flex items-center gap-2 group cursor-pointer">
+            <span className="text-3xl group-hover:scale-110 transition-transform duration-300">📈</span>
+            <div className="text-2xl font-extrabold bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent tracking-wide group-hover:tracking-wider transition-all duration-300" style={{ textShadow: '0 2px 10px rgba(30, 64, 175, 0.2)' }}>
+              LUIS COLOMA
+            </div>
           </div>
           <a href="#inscripcion" className="px-6 py-2 rounded-full bg-gradient-to-r from-accent to-accent-light text-white font-semibold hover:shadow-glow-accent transition-all duration-300">
             Únete al Curso
@@ -529,8 +532,11 @@ export default function Home() {
       <footer className="py-12 px-4 bg-primary-dark border-t border-gray-300 relative">
         <div className="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
-            <div className="text-2xl font-bold bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent mb-2">
-              LUIS COLOMA ACADEMY
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+              <span className="text-2xl">🎓</span>
+              <div className="text-2xl font-extrabold bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent tracking-wide" style={{ textShadow: '0 2px 10px rgba(30, 64, 175, 0.2)' }}>
+                LUIS COLOMA ACADEMY
+              </div>
             </div>
             <div className="text-xs text-gray-600">
               © {new Date().getFullYear()} Todos los derechos reservados.
