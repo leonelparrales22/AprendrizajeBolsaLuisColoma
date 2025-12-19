@@ -373,31 +373,36 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white border-2 border-accent/20 rounded-3xl shadow-2xl p-12"
+            className="bg-white border-2 border-accent/20 rounded-3xl shadow-2xl p-12 max-w-4xl mx-auto"
           >
-            <div className="text-center md:text-left">
+            <div className="text-center">
+              {/* Ícono decorativo */}
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-accent to-gold mb-6 shadow-lg">
+                <span className="text-4xl">👨‍💼</span>
+              </div>
+              
               <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent">
                 {config.mentor.nombre}
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed max-w-3xl mx-auto">
                 {config.mentor.bio}
               </p>
-              <blockquote className="italic text-accent-light border-l-4 border-gold pl-6 text-lg mb-6">
+              <blockquote className="italic text-accent-light border-l-4 border-gold pl-6 text-lg mb-6 max-w-2xl mx-auto text-left">
                 "El dinero no es el objetivo. La libertad de elegir tu vida, sí."
               </blockquote>
-              <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-6">
+              <div className="flex flex-wrap gap-3 justify-center mb-8">
                 <span className="px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-sm text-accent font-semibold">Wall Street Certified</span>
                 <span className="px-4 py-2 rounded-full bg-cyber-emerald/10 border border-cyber-emerald/30 text-sm text-cyber-emerald font-semibold">40+ Países</span>
               </div>
 
               {/* Información de Contacto */}
-              <div className="mt-6 p-4 bg-gradient-to-r from-accent/5 to-gold/5 border border-accent/20 rounded-xl">
+              <div className="mt-6 p-6 bg-gradient-to-r from-accent/5 to-gold/5 border border-accent/20 rounded-xl max-w-md mx-auto">
                 <p className="text-sm text-gray-600 mb-2 font-semibold">📞 Contáctame directamente:</p>
                 <a
                   href="https://wa.me/593988027275?text=Hola%2C%20estoy%20interesado%20en%20el%20curso%20de%20bolsa%20de%20valores"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg font-bold text-accent hover:text-gold transition-colors flex items-center gap-2"
+                  className="text-lg font-bold text-accent hover:text-gold transition-colors inline-flex items-center gap-2 justify-center"
                 >
                   <span>+593 98 802 7275</span>
                   <span className="text-sm text-gray-500">🇪🇨 Ecuador</span>
