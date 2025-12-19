@@ -12,11 +12,11 @@ export default function Home() {
   const [phoneValue, setPhoneValue] = useState<string>('')
 
   const testimonios = [
-    { nombre: 'Carlos M.', pais: '🇪🇨 Ecuador', testimonio: 'En 3 meses pasé de cero conocimiento a hacer mi primer 15% invirtiendo en la bolsa. El soporte de Luis es invaluable.', avatar: 'https://randomuser.me/api/portraits/men/32.jpg', rating: 5 },
-    { nombre: 'María G.', pais: '🇲🇽 México', testimonio: 'Probé 5 cursos antes. Este fue el único que me enseñó a leer el mercado de verdad. Ahora opero con confianza.', avatar: 'https://randomuser.me/api/portraits/women/44.jpg', rating: 5 },
-    { nombre: 'Javier R.', pais: '🇨🇴 Colombia', testimonio: 'La comunidad es oro puro. Cada semana hay análisis en vivo y estrategias actualizadas. Inversión recuperada en 1 mes.', avatar: 'https://randomuser.me/api/portraits/men/65.jpg', rating: 5 },
-    { nombre: 'Ana L.', pais: '🇦🇷 Argentina', testimonio: 'Finalmente entendí el análisis técnico. Las estrategias son claras y aplicables. Mi portafolio creció un 25% este trimestre.', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', rating: 5 },
-    { nombre: 'Pedro S.', pais: '🇵🇪 Perú', testimonio: 'Luis es un mentor de verdad. No solo enseña teoría, comparte su experiencia real. El mejor curso que he tomado.', avatar: 'https://randomuser.me/api/portraits/men/52.jpg', rating: 5 }
+    { nombre: 'Carlos M.', pais: '🇪🇨 Ecuador', testimonio: 'Al principio me costó entender algunos conceptos, pero Luis explica de forma que cualquiera puede entender. Ahora veo oportunidades que antes ni notaba.', iniciales: 'CM', color: 'bg-blue-500', rating: 5 },
+    { nombre: 'María G.', pais: '🇲🇽 México', testimonio: 'Había comprado otros cursos que solo daban teoría. Aquí aprendes con ejemplos reales y la comunidad te ayuda cuando tienes dudas.', iniciales: 'MG', color: 'bg-purple-500', rating: 5 },
+    { nombre: 'Javier R.', pais: '🇨🇴 Colombia', testimonio: 'Lo mejor es que no te venden sueños imposibles. Te enseñan a proteger tu capital primero y luego a buscar oportunidades.', iniciales: 'JR', color: 'bg-green-500', rating: 4 },
+    { nombre: 'Ana L.', pais: '🇦🇷 Argentina', testimonio: 'Me tomó un tiempo agarrarle la mano al análisis técnico, pero cuando empiezas a ver los patrones todo hace click. Vale la pena la inversión.', iniciales: 'AL', color: 'bg-pink-500', rating: 5 },
+    { nombre: 'Pedro S.', pais: '🇵🇪 Perú', testimonio: 'Pensé que era muy complicado, pero Luis lo explica paso a paso. Todavía estoy aprendiendo pero ya me siento más seguro con mis decisiones.', iniciales: 'PS', color: 'bg-orange-500', rating: 4 }
   ]
 
   useEffect(() => {
@@ -327,17 +327,18 @@ export default function Home() {
               >
                 <div className="bg-gradient-to-br from-primary-light to-white border-2 border-accent/20 rounded-3xl p-12 shadow-2xl h-full flex flex-col justify-center">
                   <div className="flex items-center gap-6 mb-8">
-                    <img
-                      src={testimonios[currentTestimonial].avatar}
-                      alt={testimonios[currentTestimonial].nombre}
-                      className="w-20 h-20 rounded-full border-4 border-gold shadow-lg"
-                    />
+                    <div className={`w-20 h-20 rounded-full ${testimonios[currentTestimonial].color} flex items-center justify-center text-white text-2xl font-bold shadow-lg`}>
+                      {testimonios[currentTestimonial].iniciales}
+                    </div>
                     <div>
                       <div className="font-bold text-2xl text-gray-900">{testimonios[currentTestimonial].nombre}</div>
                       <div className="text-sm text-gray-600">{testimonios[currentTestimonial].pais}</div>
                       <div className="flex gap-1 mt-2">
                         {[...Array(testimonios[currentTestimonial].rating)].map((_, j) => (
                           <span key={j} className="text-gold text-lg">★</span>
+                        ))}
+                        {[...Array(5 - testimonios[currentTestimonial].rating)].map((_, j) => (
+                          <span key={`empty-${j}`} className="text-gray-300 text-lg">★</span>
                         ))}
                       </div>
                     </div>

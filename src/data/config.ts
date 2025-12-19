@@ -1,6 +1,6 @@
 export const config = {
   titulo: "Domina la Bolsa de Valores y Mercados Financieros",
-  subtitulo: "La formación elite que transforma principiantes en inversionistas profesionales de la bolsa. Más de 5,000 alumnos ya generan ingresos pasivos invirtiendo en acciones, índices y activos tradicionales con nuestro sistema probado.",
+  subtitulo: "La formación elite que transforma principiantes en inversionistas profesionales de la bolsa. Más de 1,000 alumnos ya generan ingresos pasivos invirtiendo en acciones, índices y activos tradicionales con nuestro sistema probado.",
   temario: [
     {
       titulo: "Fundamentos de la Bolsa de Valores",
@@ -21,7 +21,7 @@ export const config = {
   ],
   mentor: {
     nombre: "Luis Coloma",
-    bio: "Inversor profesional con +4 años de experiencia en Wall Street y bolsa de valores. Ha formado a +5,000 estudiantes en 40 países. Creador del método 'Smart Capital Flow' usado por traders institucionales. Especialista en acciones, índices y derivados financieros.",
+    bio: "Inversor profesional con +4 años de experiencia en Wall Street y bolsa de valores. Ha formado a +1,000 estudiantes en 40 países. Creador del método 'Smart Capital Flow' usado por traders institucionales. Especialista en acciones, índices y derivados financieros.",
     foto: "https://via.placeholder.com/150"
   },
   curso: {
@@ -29,7 +29,7 @@ export const config = {
     payphoneUrl: "https://ppls.me/WxWVywiSgNxMPGE279Kg"
   },
   metricas: {
-    alumnos: "5,000+",
+    alumnos: "1,000+",
     experiencia: "4+ años",
     satisfaccion: "98%",
     paises: "40+"
