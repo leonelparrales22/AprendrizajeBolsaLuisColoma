@@ -2,8 +2,14 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Curso de Bolsa de Valores y Criptomonedas',
-  description: 'Aprende a invertir de manera inteligente',
+  title: 'Curso de Bolsa de Valores - Luis Coloma',
+  description: 'Domina la Bolsa de Valores y Mercados Financieros. Formación elite que transforma principiantes en inversionistas profesionales.',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
